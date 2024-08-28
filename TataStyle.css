@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+}
+
+
+nav{
+    height: 50px;
+    width: 100%;
+    box-shadow: 0px 3px 5px rgb(128, 128, 128);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-items{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 60px;
+}
+nav .nav-items a{
+    text-decoration: none;
+    color: black;
+    font-family:"NodoSans",sans-safari ;
+    font-weight: 600;
+}
+nav a::before{
+    content: "";
+    height: 3px;
+    width: 0;
+    display: inline-block;
+    background-color: black;
+    position: relative;
+    top: 25px;
+    border-radius: 50px;
+}
+a:hover::before{
+    width: 100%;
+    transition: all .4s linear;
+
+}
+nav .nav-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    
+}
+.contact{
+    height: 65px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+    box-shadow: -1px -1px 5px;
+    .call,.test_drive{
+        display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 10px;
+
+    }
+    svg{
+        animation: zoom-up 0.5s linear infinite alternate;
+    }
+}
+    @keyframes zoom-up{
+        to{
+            transform:scale(1.2);
+        }
+    }
+
+
+.primary-link{
+    font-family: "NodoSans",sans-safari;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+
+}
+/* home */
+.home{
+height: 100vh;
+width: 100%;
+background: linear-gradient(90deg,white 500px,rgba(255, 255, 0, 0.692) );
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+p{
+    width: 450px;
+    text-align: center;
+}
+.home-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+}
+.primary-para{
+    font-family: "NodoSans",sans-safari;
+    font-weight: 300;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 10px;
+    top: 200px;
+    display: flex;
+    align-items: flex-start;
+    color: black;
+}
+.primary-head{
+    font-family: "NodoSans",sans-safari;
+    font-weight: 700;
+    font-size: 5rem;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    display: flex;
+    align-items: flex-start;
+
+}
+/* price section  */
+.section-price{
+    height: 55vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: black;
+    .price-left{
+      height: 100%;
+      width: 50%;
+      /* background-color: aqua; */
+      .loc{
+    height:30px ;
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 100px;
+border-bottom: 2px solid;
+.p{
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+} }
+.loc:hover{
+    cursor: pointer;
+}
+}
+   
+    .price-right{
+        height: 100%;
+        width: 48%;
+        background-color: black;
+    }
+    .s_para{
+        /* font-weight: 300; */
+        font-size: 1rem;
+        font-family:"NodoSans",sans-safari ;
+        color: aliceblue;
+        /* position: absolute; */
+    }
+    p{
+        line-height: 30px;
+        color: aliceblue;
+    }
+    .cities::-webkit-scrollbar{
+        width: 10px;
+    }
+    .cities::-webkit-scrollbar-track{
+        width: 10px;
+        background-color: antiquewhite;
+    }
+    .cities::-webkit-scrollbar-thumb{
+        background-color: wheat;
+        border-radius: 50px;
+        height: 100px;
+        box-shadow: 1px 1px 5px black;
+    }
+    
+
